@@ -578,8 +578,6 @@ blockquote {
 </style>
 
 ---
-
----
 layout: intro
 ---
 
