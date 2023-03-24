@@ -439,7 +439,7 @@ import { createApp, eventHandler, createRouter, toNodeListener } from "h3";
 const app = createApp()
 const router = createRouter()
   .get("/", eventHandler(() => "Hoi Utrecht!"))
-  .get("/color/:color", eventHandler((event) => `I like the color ${event.context.params.name}!`)
+  .get("/color/:color", eventHandler((event) => `I like the color ${event.context.params.color}!`)
 
 createServer(toNodeListener(app)).listen(process.env.PORT || 3000);
 ```
@@ -455,7 +455,7 @@ import { createApp, eventHandler, createRouter, toNodeListener } from "h3";
 const app = createApp()
 const router = createRouter()
   .get("/", eventHandler(() => "Hoi Utrecht!"))
-  .get("/color/:color", eventHandler((event) => `I like the color ${event.context.params.name}!`)
+  .get("/color/:color", eventHandler((event) => `I like the color ${event.context.params.color}!`)
 
 listen(toNodeListener(app))
 ```
